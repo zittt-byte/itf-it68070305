@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>ITF Website</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <nav>
 
-        <p>68070305</p>
-        <h2>ITF Website</h2>
-        <p>week14</p>
+<header>
+  ITF Website
+  <span>Week 14</span>
+  <span>68070305</span>
+</header>
 
-    </nav>
+<div class="container">
+  <h1>ITF Simple Bank</h1>
+  <img src="" alt="" srcset="">
+  <p style="text-align:center;">Welcome to my first HTML + CSS + JS website!</p>
 
-    <div class="container">
+  <div class="log-box" id="logBox">
+    1, Current account balance: 1000, Current cash balance: 1000
+  </div>
 
-        <div>
-            Enter number: <input type="number" name="" id="myinput">
-            <button onclick="add()"> + 1</button>
-        </div>
+  <div class="section">
+    <div class="box">
+      <h3>Account Overview</h3>
 
-        <div>
-            Enter lover <input type="text" name="" id="my luv">
-        </div>
+      <link rel="import" href="">
+      <h4>Account Information</h4>
+      <p>Name: Teepada Chuenprempree</p>
+      <p>Type: Savings Account</p>
 
+      <h4>Balance Information</h4>
+      <label>Current account balance:</label>
+      <input type="number" id="accountBalance" value="1000" readonly>
+      <label>Current cash balance:</label>
+      <input type="number" id="cashBalance" value="1000" readonly>
+
+      <h4>Bank Operation</h4>
+      <select id="operation">
+        <option value="deposit">Deposit</option>
+        <option value="withdraw">Withdraw</option>
+      </select>
+      <input type="number" id="amount" placeholder="Enter amount">
+      <button onclick="proceed()">Proceed</button>
     </div>
-    <script src="adadas.js"></script>
+
+    <div class="box">
+      <h3>Financial Tools</h3>
+      <h4>Currency Converter</h4>
+      <label>Input balance:</label>
+      <input type="number" id="inputBalance" value="0">
+      <label>Output balance:</label>
+      <input type="text" id="outputBalance" value="0" readonly>
+      <label>Input currency:</label>
+      <select id="currency">
+        <option value="USD">USD</option>
+        <option value="THB">THB</option>
+      </select>
+      <button onclick="convert()">Convert</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
